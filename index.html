@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>select</title>
+    <meta charset="utf-8" name="viewport"
+          content="width=device-width,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="css/select.css"/>
+    <style>
+        .stripe_box{
+            width: 90%;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+		function change_(t){
+		 console.log("change()")
+		}
+        function click_(t){
+		 console.log("click_()")
+		}
+    </script>
+</head>
+<body>
+
+<article class="contet-sub">
+    <div class="stripe_box">
+        <div style="height: 50px ;width: 100%"></div>
+        <div class="select-box-sub">
+            <div class="select-box-input">
+                <div style="display: none">
+                    <select onchange='change_(this)' onclick='click_(this)'>
+                        <option value="1">我了个去1</option>
+                        <option value="2">我了个去2</option>
+                        <option value="3">我了个去3</option>
+                        <option value="4">我了个去4</option>
+                        <option value="5">我了个去5</option>
+                    </select>
+                </div>
+                <span></span>
+            </div>
+            <ul class="select-box-ul">
+            </ul>
+        </div>
+        <div style="height: 180px;width: 100%"></div>
+        <div class="select-box-sub">
+            <div class="select-box-input">
+                <div style="display: none">
+                    <select>
+                        <option value="1">X我了个去1</option>
+                        <option value="2">X我了个去2</option>
+                        <option value="3">X我了个去3</option>
+                        <option value="4">X我了个去4</option>
+                        <option value="5">X我了个去5</option>
+                    </select>
+                </div>
+                <span></span>
+            </div>
+            <ul class="select-box-ul">
+            </ul>
+        </div>
+    </div>
+
+</article>
+<script type="text/javascript" src="js/select.js" charset="utf-8"></script>
+<script></script>
+</body>
+</html>
